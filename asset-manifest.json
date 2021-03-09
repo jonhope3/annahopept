@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/annahopept/static/css/main.fedf132f.chunk.css",
+    "main.css": "/annahopept/static/css/main.91393a6d.chunk.css",
     "main.js": "/annahopept/static/js/main.31dc955e.chunk.js",
     "main.js.map": "/annahopept/static/js/main.31dc955e.chunk.js.map",
     "runtime-main.js": "/annahopept/static/js/runtime-main.2ee091b2.js",
@@ -8,9 +8,9 @@
     "static/js/2.727e2355.chunk.js": "/annahopept/static/js/2.727e2355.chunk.js",
     "static/js/2.727e2355.chunk.js.map": "/annahopept/static/js/2.727e2355.chunk.js.map",
     "index.html": "/annahopept/index.html",
-    "precache-manifest.35d4c773c5068cbe2aaa5606b6b1d609.js": "/annahopept/precache-manifest.35d4c773c5068cbe2aaa5606b6b1d609.js",
+    "precache-manifest.f3ac6bef776bd5e5213cea614d0c094f.js": "/annahopept/precache-manifest.f3ac6bef776bd5e5213cea614d0c094f.js",
     "service-worker.js": "/annahopept/service-worker.js",
-    "static/css/main.fedf132f.chunk.css.map": "/annahopept/static/css/main.fedf132f.chunk.css.map",
+    "static/css/main.91393a6d.chunk.css.map": "/annahopept/static/css/main.91393a6d.chunk.css.map",
     "static/js/2.727e2355.chunk.js.LICENSE.txt": "/annahopept/static/js/2.727e2355.chunk.js.LICENSE.txt",
     "static/media/anna-swing.jpg": "/annahopept/static/media/anna-swing.db72dd3e.jpg",
     "static/media/avatar.jpg": "/annahopept/static/media/avatar.f1d71f77.jpg",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ee091b2.js",
     "static/js/2.727e2355.chunk.js",
-    "static/css/main.fedf132f.chunk.css",
+    "static/css/main.91393a6d.chunk.css",
     "static/js/main.31dc955e.chunk.js"
   ]
 }
