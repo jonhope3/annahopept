@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2578ff21f0f8b019f09b0ed43b0c8852",
+    "revision": "2a13a357c64aa2d7da5aca7665d8ed8a",
     "url": "/annahopept/index.html"
   },
   {
-    "revision": "68664eb91c0ddc35b2b7",
+    "revision": "a66adec15179ae7180d1",
     "url": "/annahopept/static/css/main.fedf132f.chunk.css"
   },
   {
-    "revision": "4c01d41299d63b544f63",
-    "url": "/annahopept/static/js/2.b3db99c7.chunk.js"
+    "revision": "14e6f66104aaef1a3914",
+    "url": "/annahopept/static/js/2.727e2355.chunk.js"
   },
   {
     "revision": "8dbc9bd92b344a5deca62eeacc09fc2d",
-    "url": "/annahopept/static/js/2.b3db99c7.chunk.js.LICENSE.txt"
+    "url": "/annahopept/static/js/2.727e2355.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68664eb91c0ddc35b2b7",
-    "url": "/annahopept/static/js/main.2c18dcae.chunk.js"
+    "revision": "a66adec15179ae7180d1",
+    "url": "/annahopept/static/js/main.31dc955e.chunk.js"
   },
   {
     "revision": "0b38e7b16d5fd67abcd8",
     "url": "/annahopept/static/js/runtime-main.2ee091b2.js"
+  },
+  {
+    "revision": "db72dd3e79d3804c9ee9fea81252fda2",
+    "url": "/annahopept/static/media/anna-swing.db72dd3e.jpg"
   },
   {
     "revision": "f1d71f777331fd7e3de116edf4ee3b67",
@@ -64,12 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/annahopept/static/media/cynthia-del-rio.9813593c.jpg"
   },
   {
-    "revision": "e0508cc923eb0b5e68ca6783c53d0f1d",
-    "url": "/annahopept/static/media/kendall.e0508cc9.jpg"
-  },
-  {
-    "revision": "df8fd3efcd662b64b44de07f351c838b",
-    "url": "/annahopept/static/media/landing-bg.df8fd3ef.jpg"
+    "revision": "ce856a5427bda36412a2c83677187c53",
+    "url": "/annahopept/static/media/landing-bg.ce856a54.jpg"
   },
   {
     "revision": "08e18cb904f0f3c6dd9e3d4ed72e0eca",
