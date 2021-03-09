@@ -11,7 +11,6 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
@@ -50,8 +49,8 @@ export default function LandingPage(props) {
               <h2 className={classes.title}>Your Story Starts Here.</h2>
               <h4>
                 Physical therapy (PT) is care that aims to ease pain and help you function, move, and live better.
-                Whether you need to relieve pain, improve mobility and balance, recover after giving birth,
-                physical therapy is an incredible way to get back to being yourself.
+                Whether you need to relieve pain, improve mobility and balance, or recover after giving birth,
+                physical therapy is the best way to get back to being yourself.
               </h4>
               <br />
             </GridItem>
