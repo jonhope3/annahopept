@@ -59,7 +59,7 @@ export default function WorkSection() {
               <GridItem xs={12} sm={12} md={4}>
                 <Button color="primary">Send Message</Button>
               </GridItem>
-            {/*  form submit with https://www.emailjs.com/*/}
+            {/*form submit with https://www.emailjs.com/*/}
             </GridContainer>
           </form>
         </GridItem>
