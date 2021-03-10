@@ -2,7 +2,7 @@
   "name": "anna-hope-pt",
   "version": "1.0.0",
   "description": "Anna Hope PT",
-  "homepage": "http://jonhope3.github.io/annahopept",
+  "homepage": "https://annahopept.com",
   "private": true,
   "main": "src/index.js",
   "dependencies": {
