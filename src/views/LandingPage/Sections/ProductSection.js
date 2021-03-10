@@ -34,7 +34,10 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Evaluation"
-              description="Some information about evaluation."
+              description="Evaluations require the following components in selecting the correct evaluation
+              level: History, Examination, Clinical Presentation, and Clinical Decision Making.
+              Additional guiding factors include coordination, consultation, and collaboration of care consistent with
+              the nature of the problem and the needs of the patient."
               icon={Assignment}
               iconColor="info"
               vertical
@@ -43,7 +46,10 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Treatment"
-              description="Some information about treatment."
+              description="Treatment begins after the completion of your evaluation and the development of your plan of care.
+              You will be provided with a specialized path to recovery that’s specific to your unique needs,
+              not a one-size-fits-all plan. Your healing is important to us. That’s why we promise to give you the most
+              compassionate and effective care geared at helping you feel like you."
               icon={SupervisorAccountIcon}
               iconColor="primary"
               vertical
@@ -52,7 +58,9 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Graduation"
-              description="Some information about graduation."
+              description="The best part! After completion of your treatment plan and having reached all goals we set
+              for you to achieve, you're done! We do our best to get you in and out at an appropriate pace. We would
+              love to see all of you every day, but the goal is get to back to feeling like yourself!"
               icon={DoneIcon}
               iconColor="success"
               vertical
