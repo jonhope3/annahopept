@@ -43,7 +43,31 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Here is where we can decide what Anna would like to say about herself!
+                  {/*Here is where we can decide what Anna would like to say about herself!*/}
+                  Hi! I'm Anna, thanks for stopping by! A bit about myself: I went to Iowa State University
+                  (go Cyclones!), graduating in 2013, where I earned my B.S. in Kinesiology and Health Sciences. After
+                  being excited by the medical field and my enthusiasm to help, I decided to pursue a doctoral degree
+                  to practice Medicine full-time.
+                  <br/>
+                  <br/>
+                  I attended Des Moines University from to 2014-2017 where I earned my Doctorate of Physical Therapy. I
+                  was able to study in Iowa, Nebraska, and Florida, with a wide variety of specializations and patient groups.
+                  It was hard to turn down job offers in Florida, but I knew I needed to return to be closer to friends and
+                  family!
+                  <br/>
+                  <br/>
+                  I began in Chicago, at the Illinois Bone and Joint Institute, with a focus on treating orthopedic issues
+                  arising from surgery recovery, sports injuries, chronic pain, and more. After treating at IBJI for more than 2 years,
+                  I began my work at Core Physical Therapy. After studying women's health for several years, and becoming a Pelvic Health Specialist,
+                  Core Physical Therapy has given me a chance to prove my ability and lead the company's Women's Health Program.
+                  <br/>
+                  <br/>
+                  I am still excited to be doing the work that I'm doing and I am excited that you stopped by my website!
+                  If there's anything that caught your attention or anything you have questions about, please send me a
+                  message in the form below!
+                  <br/>
+                  <br/>
+                  - Anna -
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}/>
