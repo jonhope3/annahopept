@@ -1,0 +1,236 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&family=Great+Vibes&display=swap');
+
+// Updated blue color palette
+$primary: #3F5D6E;    // Soft blue-gray
+$accent: #d4a5a5;     // Light, friendly sky blue
+$light: #F5F8FA;      // Very light blue-tinted white
+$shadow: rgba(0, 0, 0, 0.08); // Soft shadow
+
+@mixin transition($property) {
+  transition: $property 0.3s ease-in-out;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: $light;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 93, 110, 0.6); // Matches primary blue
+  z-index: 2;
+}
+
+.heroContent {
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.5s ease-in;
+  position: relative;
+  z-index: 3;
+}
+
+.inviteText { /* Added styling for "You're Invited" */
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px $shadow;
+  color: #fff;
+}
+
+.heroTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px $shadow;
+}
+
+.heroSubtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  color: white;
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+  z-index: 3;
+}
+
+.main {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.eventCard {
+  background: white;
+  border-radius: 2rem;
+  padding: 3rem;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 15px 35px $shadow;
+  position: relative;
+  @include transition(transform);
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+.decorLine {
+  width: 80px;
+  height: 2px;
+  background: $accent;
+  margin: 0 auto 2rem;
+}
+
+.eventTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: $primary;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.detailsGrid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: $primary;
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.detailIcon {
+  font-size: 1.25rem; /* Base size */
+  width: 20px; /* Fixed width to normalize size */
+  height: 20px; /* Fixed height to normalize size */
+  opacity: 0.9;
+  color: $accent; /* Match accent color */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.rsvpSection {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.rsvpText {
+  font-size: 1.2rem;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+
+.contactLink {
+  color: $accent;
+  text-decoration: none;
+  font-weight: 500;
+  @include transition(color);
+
+  &:hover {
+    color: color.adjust($accent, $lightness: -10%);
+  }
+}
+
+.registrySection {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.registryButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: $primary;
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  @include transition(all);
+
+  &:hover {
+    background: color.adjust($primary, $lightness: 15%);
+    transform: scale(1.03);
+  }
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: $accent;
+  color: white;
+
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .inviteText {
+    font-size: 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .eventCard {
+    padding: 2rem;
+  }
+
+  .eventTitle {
+    font-size: 2rem;
+  }
+}
