@@ -27,6 +27,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; // Add this to prevent any content from spilling out
 }
 
 .heroImage {
@@ -44,6 +45,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
 }
 
 .heroContent {
+  min-height: 80vh;
   text-align: center;
   color: white;
   animation: fadeIn 1.5s ease-in;
@@ -55,7 +57,6 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   gap: 0.5rem; // Add gap between elements
 }
 
-// Update your existing styles
 .inviteText {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
@@ -68,6 +69,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   font-family: 'Cinzel', serif;
   font-size: 5rem;
   margin-bottom: 1rem;
+  margin-top: 5rem; // Add margin top to create space after the invite text
   text-shadow: 0 2px 8px $shadow;
 }
 
@@ -75,12 +77,12 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 1.5px;
-  margin-top: 1rem; // Add margin top to create space after the title
+  margin-top: 4rem; // Add margin top to create space after the title
 }
 
 .scrollIndicator {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   color: white;
   font-size: 3rem;
   animation: bounce 2s infinite;
@@ -201,21 +203,33 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   color: white;
 
   p {
-    margin: 0;
     font-size: 1.1rem;
+    font-style: italic;
   }
 }
 
 // Animations
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-8px); }
-  60% { transform: translateY(-4px); }
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
 }
 
 // Responsive Design
@@ -223,21 +237,27 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   .heroContent {
     gap: 0.7rem; // Increase gap on mobile
     padding: 1.5rem; // Adjust padding for mobile
+    min-height: 70vh; // Reduce minimum height on mobile if needed
+  }
+
+  .heroImage {
+    transform: scale(1.3); // Scale the image slightly on mobile
   }
 
   .inviteText {
     font-size: 2.5rem;
-    margin-bottom: 6rem; // Slightly less margin on mobile
+    margin-bottom: 2rem; // Adjust spacing for mobile
   }
 
   .heroTitle {
     font-size: 3rem;
-    margin-bottom: 0.8rem; // Add some margin below title on mobile
+    margin-top: 8rem; // Reduce top margin on mobile
+    margin-bottom: 0.8rem;
   }
 
   .heroSubtitle {
     font-size: 1.4rem;
-    margin-top: 6rem; // Keep some space on mobile
+    margin-top: 8rem; // Reduce top margin on mobile
   }
 
   .eventCard {
