@@ -10,12 +10,12 @@ export default function Home() {
             <Head>
                 <title>Anna & Chris | Wedding Shower</title>
                 <meta name="description" content="Celebrate Anna & Chris's Wedding Shower"/>
-                <link rel="icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/shower/pinata.png`}/>
+                <link rel="icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/wedding-shower/pinata.png`}/>
             </Head>
 
             <header className={styles.hero}>
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/shower/together.jpeg`}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/wedding-shower/together.jpeg`}
                     alt="Anna & Chris"
                     fill
                     className={styles.heroImage}

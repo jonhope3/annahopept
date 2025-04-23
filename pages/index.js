@@ -145,7 +145,6 @@ export default function UnderConstruction() {
                 <title>Coming Soon | Anna Hope Physical Therapy</title>
                 <meta name="description" content="Anna Hope Physical Therapy website is under construction" />
                 <link rel="icon" href="/favicon.ico" />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
             </Head>
 
             <main style={{
