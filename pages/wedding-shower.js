@@ -22,7 +22,7 @@ export default function Home() {
                     priority
                     style={{
                         objectFit: 'cover',
-                        objectPosition: 'center' // Consider adding this to better control positioning
+                        objectPosition: 'center'
                     }}
                 />
                 <div className={styles.heroOverlay}></div>
@@ -31,7 +31,7 @@ export default function Home() {
                     <h1 className={styles.heroTitle}>Anna & Chris</h1>
                     <p className={styles.heroSubtitle}>Wedding Shower Celebration</p>
                 </div>
-                <div className={styles.scrollIndicator}>&darr;</div>
+                <div className={styles.scrollIndicator}>↓</div>
             </header>
 
             <main className={styles.main}>
@@ -46,30 +46,34 @@ export default function Home() {
                         </div>
                         <div className={styles.detailItem}>
                             <FontAwesomeIcon icon={faClock} className={styles.detailIcon}/>
-                            <p>1:00 PM - 4:00 PM</p>
+                            <p>11:30 AM - 1:30 PM</p>
                         </div>
                         <div className={styles.detailItem}>
                             <FontAwesomeIcon icon={faLocationDot} className={styles.detailIcon}/>
-                            <p>Big Grove Taproom<br/>555 17th St, Des Moines, IA 50309</p>
+                            <p>Iowa Taproom - Joliet Room<br/>215 East 3rd Street, Des Moines, IA 50309</p>
                         </div>
                     </div>
 
-                    <div className={styles.rsvpSection}>
-                        <p className={styles.rsvpText}>Please RSVP by August 1st</p>
-                        <a href="mailto:EMAIL_ADDRESS" className={styles.contactLink}>
-                            Contact NAME: EMAIL
-                        </a>
-                    </div>
-
                     <div className={styles.registrySection}>
-                        <a
-                            href="https://www.example-registry.com/anna-chris"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.registryButton}
-                        >
-                            View Registry
-                        </a>
+                        <div className={styles.buttonContainer}>
+                            <p className={styles.rsvpText}>Please RSVP by August 23rd</p>
+                            <a
+                                href="https://www.zola.com/wedding/chrisandannacabo2025/registry"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.registryButton}
+                            >
+                                RSVP
+                            </a>
+                            <a
+                                href="https://www.zola.com/wedding/chrisandannacabo2025/registry"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.registryButton}
+                            >
+                                View Registry
+                            </a>
+                        </div>
                     </div>
                 </section>
             </main>

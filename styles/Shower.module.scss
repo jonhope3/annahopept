@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&family=Great+Vibes&display=swap');
 
 // Updated blue color palette
-$primary: #3F5D6E;    // Soft blue-gray
-$accent: #d4a5a5;     // Light, friendly sky blue
-$light: #F5F8FA;      // Very light blue-tinted white
+$primary: #3F5D6E; // Soft blue-gray
+$accent: #d4a5a5; // Light, friendly sky blue
+$light: #F5F8FA; // Very light blue-tinted white
 $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
+$button-footer-blue: #4682B4; // Steel blue for buttons and footer
 
 @mixin transition($property) {
   transition: $property 0.3s ease-in-out;
@@ -27,7 +28,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; // Add this to prevent any content from spilling out
+  overflow: hidden;
 }
 
 .heroImage {
@@ -51,16 +52,16 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   animation: fadeIn 1.5s ease-in;
   position: relative;
   z-index: 3;
-  padding: 2rem; // Add padding to ensure content stays visible
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; // Add gap between elements
+  gap: 0.5rem;
 }
 
 .inviteText {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
-  margin-bottom: 1rem; // Increased from 0.5rem
+  margin-bottom: 1rem;
   text-shadow: 0 2px 6px $shadow;
   color: #fff;
 }
@@ -69,7 +70,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   font-family: 'Cinzel', serif;
   font-size: 5rem;
   margin-bottom: 1rem;
-  margin-top: 5rem; // Add margin top to create space after the invite text
+  margin-top: 5rem;
   text-shadow: 0 2px 8px $shadow;
 }
 
@@ -77,7 +78,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 1.5px;
-  margin-top: 4rem; // Add margin top to create space after the title
+  margin-top: 4rem;
 }
 
 .scrollIndicator {
@@ -113,7 +114,7 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
 .decorLine {
   width: 80px;
   height: 2px;
-  background: $accent;
+  background: $primary;
   margin: 0 auto 2rem;
 }
 
@@ -145,17 +146,42 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
 }
 
 .detailIcon {
-  font-size: 1.25rem; /* Base size */
-  width: 20px; /* Fixed width to normalize size */
-  height: 20px; /* Fixed height to normalize size */
+  font-size: 1.25rem;
+  width: 20px;
+  height: 20px;
   opacity: 0.9;
-  color: $accent; /* Match accent color */
-  flex-shrink: 0; /* Prevent shrinking */
+  color: $primary;
+  flex-shrink: 0;
 }
 
-.rsvpSection {
+.registrySection {
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.registryButton {
+  display: block;
+  padding: 0.8rem 2rem;
+  background: $button-footer-blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+  @include transition(all);
+
+  &:hover {
+    background: color.adjust($button-footer-blue, $lightness: -10%);
+    transform: scale(1.03);
+  }
 }
 
 .rsvpText {
@@ -164,42 +190,10 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
   margin-bottom: 1rem;
 }
 
-.contactLink {
-  color: $accent;
-  text-decoration: none;
-  font-weight: 500;
-  @include transition(color);
-
-  &:hover {
-    color: color.adjust($accent, $lightness: -10%);
-  }
-}
-
-.registrySection {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.registryButton {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background: $primary;
-  color: white;
-  text-decoration: none;
-  border-radius: 2rem;
-  font-weight: 500;
-  @include transition(all);
-
-  &:hover {
-    background: color.adjust($primary, $lightness: 15%);
-    transform: scale(1.03);
-  }
-}
-
 .footer {
   padding: 2rem;
   text-align: center;
-  background: $accent;
+  background: $button-footer-blue;
   color: white;
 
   p {
@@ -235,29 +229,29 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
 // Responsive Design
 @media (max-width: 768px) {
   .heroContent {
-    gap: 0.7rem; // Increase gap on mobile
-    padding: 1.5rem; // Adjust padding for mobile
-    min-height: 70vh; // Reduce minimum height on mobile if needed
+    gap: 0.7rem;
+    padding: 1.5rem;
+    min-height: 70vh;
   }
 
   .heroImage {
-    transform: scale(1.3); // Scale the image slightly on mobile
+    transform: scale(1.3);
   }
 
   .inviteText {
     font-size: 2.5rem;
-    margin-bottom: 2rem; // Adjust spacing for mobile
+    margin-bottom: 2rem;
   }
 
   .heroTitle {
     font-size: 3rem;
-    margin-top: 8rem; // Reduce top margin on mobile
+    margin-top: 8rem;
     margin-bottom: 0.8rem;
   }
 
   .heroSubtitle {
     font-size: 1.4rem;
-    margin-top: 8rem; // Reduce top margin on mobile
+    margin-top: 8rem;
   }
 
   .eventCard {
@@ -266,5 +260,9 @@ $shadow: rgba(0, 0, 0, 0.08); // Soft shadow
 
   .eventTitle {
     font-size: 2rem;
+  }
+
+  .registryButton {
+    width: 180px;
   }
 }
