@@ -58,7 +58,7 @@ export default function Home() {
                         <div className={styles.buttonContainer}>
                             <p className={styles.rsvpText}>Please RSVP by August 23rd</p>
                             <a
-                                href="https://www.zola.com/wedding/chrisandannacabo2025/registry"
+                                href="https://withjoy.com/chris-and-anna-sep-13/rsvp"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.registryButton}
@@ -66,7 +66,7 @@ export default function Home() {
                                 RSVP
                             </a>
                             <a
-                                href="https://www.zola.com/wedding/chrisandannacabo2025/registry"
+                                href="https://www.zola.com/registry/chrisandannacabo2025"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.registryButton}
