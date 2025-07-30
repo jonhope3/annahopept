@@ -89,6 +89,11 @@ $button-footer-blue: #4682B4; // Steel blue for buttons and footer
   animation: bounce 2s infinite;
   z-index: 3;
 }
+@media (max-width: 768px) {
+  .scrollIndicator {
+    font-size: 5rem;
+  }
+}
 
 .main {
   padding: 4rem 2rem;
